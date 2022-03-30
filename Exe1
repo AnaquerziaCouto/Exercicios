@@ -1,0 +1,45 @@
+#include <iostream>
+using namespace std;
+#include <math.h>
+
+
+
+int main()
+{
+  int linha=2,coluna=2,i,j, mat[linha][coluna], valor;
+  //preenchendo a matriz com 0 em toda as posições 
+  printf("teste");
+  for(i=0;i<linha;i++)
+    {
+      for(j=0;i<coluna;j++)
+        mat[i][j]=0;
+    }
+  //imprimindo a matriz zerada
+  for(i=0;i<linha;i++)
+    {for(j=0;i<coluna;j++)
+      {
+        cout<<mat[i][j];
+      }
+      cout<<endl;
+    }
+  //prenchendo a matriz com valores solicitados e digitado pelo usuário 
+  for(i=0;i<linha;i++)
+    {for(j=0;i<coluna;j++)
+      {
+        cout<<"Digite o valor que vai estar na posição"        <<i<<j<<endl;
+        cin>>valor;
+        while(valor>=0 )
+            mat[i][j]=valor;
+      }
+    }
+  for(i=0;i<linha;i++)
+    {for(j=0;i<coluna;j++)
+      {
+        cout<<mat[i][j];
+      }
+      cout<<endl;
+    }
+  
+  return 0;
+}
+     
